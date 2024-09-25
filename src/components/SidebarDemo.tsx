@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Sidebar, SidebarBody, SidebarLink } from "./ui/sidebar";
 import {
     IconArrowLeft,
@@ -74,7 +74,7 @@ export const Logo = () => (
             animate={{ opacity: 1 }}
             className="font-medium text-black dark:text-white whitespace-pre"
         >
-            Acet Labs
+            QQQ
         </motion.span>
     </Link>
 );
