@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import Table from '../components/Table';
 
 export const Route = createFileRoute('/')({
   component: () => <Dashboard />,
@@ -31,7 +32,9 @@ const Dashboard = () => {
           <div
             key={"left-section"}
             className="h-full w-full flex-[4] text-gray-400 rounded-lg bg-gray-100 dark:bg-gray-800 animate-pulse justify-center items-center text-center align-middle flex"
-          >LIST VIEW</div>
+          >
+            <Table />
+          </div>
 
           {/* Right part: 20% of the width with 30/70 split */}
           <div className="flex flex-[1] flex-col gap-2">
