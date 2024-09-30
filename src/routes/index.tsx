@@ -21,7 +21,13 @@ const Dashboard = () => {
         {/* Bottom Section with 80/20 split */}
         <div className="flex gap-2 flex-1">
 
-          {/* Left part: 80% of the width */}
+          {/* Left part: 20% of the width */}
+          <div
+            key={"left-section"}
+            className="h-full w-full flex-[1] rounded-lg bg-gray-100 dark:bg-neutral-800 animate-pulse"
+          ></div>
+
+          {/* middle part: 60% of the width */}
           <div
             key={"left-section"}
             className="h-full w-full flex-[4] rounded-lg bg-gray-100 dark:bg-neutral-800 animate-pulse"
