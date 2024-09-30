@@ -16,7 +16,7 @@ export function SidebarLayout() {
     const links = [
         {
             label: "Home",
-            href: "/home",
+            href: "/",
             icon: <IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
         },
         {
@@ -74,7 +74,7 @@ export const Logo = () => (
             animate={{ opacity: 1 }}
             className="font-medium text-black dark:text-white whitespace-pre"
         >
-            QQQ
+            Quasar
         </motion.span>
     </Link>
 );

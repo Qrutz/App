@@ -3,10 +3,17 @@ import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 import { SidebarLayout } from '../components/SidebarDemo'
 
 export const Route = createRootRoute({
+    // loader: () => {
+    //     redirect({
+    //         to: "/home",
+    //         throw: true,
+    //     })
+    // },
     component: () => (
         <div className="flex h-screen">
             {/* Sidebar layout is now a dedicated component */}
             <SidebarLayout />
+
 
             {/* Main content area */}
 
