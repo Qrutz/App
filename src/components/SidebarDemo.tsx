@@ -10,6 +10,7 @@ import {
 
 import { motion } from "framer-motion";
 import { Link } from "@tanstack/react-router";
+import DarkModeToggle from "./DarkmodeToggle";
 
 // SidebarLayout: handles only the sidebar
 export function SidebarLayout() {
@@ -47,9 +48,12 @@ export function SidebarLayout() {
                         {links.map((link, idx) => (
                             <SidebarLink key={idx} link={link} />
                         ))}
+
+
                     </div>
                 </div>
                 <div>
+                    <DarkModeToggle />
                     <SidebarLink
                         link={{
                             label: "User Name",
@@ -58,6 +62,7 @@ export function SidebarLayout() {
                         }}
                     />
                 </div>
+
             </SidebarBody>
         </Sidebar>
     );

@@ -10,7 +10,7 @@ export const Route = createRootRoute({
     //     })
     // },
     component: () => (
-        <div className="flex h-screen">
+        <div className="flex h-screen bg-gray-100 dark:bg-gray-800">
             {/* Sidebar layout is now a dedicated component */}
             <SidebarLayout />
 
